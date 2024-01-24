@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="stylesheet" href="stylesss.css">
+    <title>Measurement Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Measurement Conversion Calculator</h1>
+        <p>Use this calculator to convert measurement easily. Enter the value, select the units, and get the result!</p>
+    </header>
+   <form id="conversionForm" onSubmit="convertMeasurement(); return false;">
+     <p>Value: 
+	 	<input type="text" name="value" id="valueForm" required>
+     </p>
+        <label for="fromUnit">From Unit:</label>
+        <p><select id="fromUnit" name="fromUnit" required>
+          <option value="centimeter">Centimeter</option>
+          <option value="kilogram">Kilogram</option>
+          </select>
+        </p>
+        <label for="toUnit">To Unit:        </label>
+        <select id="toUnit" name="toUnit" required>
+            <option value="meter">Meter</option>
+            <option value="gram">Gram</option>
+        </select>
+    	<button type="submit">Convert</button>
+</form>
+    <div id="result"></div>
+    <nav>
+        <ul>
+            <li><a href="Conversion_index.html">Homepage</a></li>
+            <li><a href="Conversion_info.html">Conversion Page</a></li>
+            <li><a href="Conversion_cal.html">Conversion Calculator</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2023 Aeisyah Zakeera. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
